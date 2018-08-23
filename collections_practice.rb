@@ -28,7 +28,12 @@ def count_elements(array)
   counts = []
   array.each do |ele|
     name = ele[:name]
-    if counts.find {|name_hash| name_hash.include? 
+    info_hash = counts.find {|hash| hash.include? name.to_sym}
+    if info_hash != nil
+      info_hash[:count += 1]
+    else 
+      counts << {:name => name, count => 1}
+    end
   end
   counts
 end 
