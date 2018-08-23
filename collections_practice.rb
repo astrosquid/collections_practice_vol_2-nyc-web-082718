@@ -30,7 +30,7 @@ def count_elements(array)
     name = ele[:name]
     info_hash = counts.find {|hash| hash.include? name.to_sym}
     if info_hash != nil
-      info_hash[:count += 1]
+      info_hash[:count] += 1
     else 
       counts << {:name => name, count => 1}
     end
