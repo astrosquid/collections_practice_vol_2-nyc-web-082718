@@ -40,6 +40,7 @@ end
 
 def merge_data(keys, data)
   keys.each do |k|
-    name = k[:first_name]
-    
+    data.find do |d|
+      d.include? k.to_s
+    end
 end
