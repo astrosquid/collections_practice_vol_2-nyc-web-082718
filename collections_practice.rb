@@ -32,7 +32,7 @@ def count_elements(array)
     if info_hash != nil
       info_hash[:count] += 1
     else 
-      counts << {:name => name, count => 1}
+      counts << {:name => name, :count => 1}
     end
   end
   counts
