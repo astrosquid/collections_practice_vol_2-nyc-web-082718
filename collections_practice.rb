@@ -46,5 +46,5 @@ def merge_data(keys, data)
       d.include? name
     end
   x[name][:first_name] = name 
-  a
+  a << x[name]
 end
