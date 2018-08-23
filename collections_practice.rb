@@ -50,3 +50,7 @@ def merge_data(keys, data)
   end
   a
 end
+
+def find_cool(array)
+  array.select do |ele|
+    
