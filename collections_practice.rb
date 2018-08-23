@@ -52,6 +52,7 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
-  puts array
-  # array.select do |ele|
+  array.select do |ele|
+    ele[:temperature] == "cool"
+  end 
 end
