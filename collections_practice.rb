@@ -57,6 +57,6 @@ def find_cool(array)
   end 
 end
 
-def organize_schools(array)
+def organize_schools(schools)
   puts array
 end
