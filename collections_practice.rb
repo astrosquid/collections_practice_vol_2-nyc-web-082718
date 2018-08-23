@@ -48,4 +48,5 @@ def merge_data(keys, data)
     x[name][:first_name] = name 
     a << x[name]
   end
+  a
 end
