@@ -59,6 +59,12 @@ end
 
 def organize_schools(schools)
   locations = {}
-  schools.each do |school|
-    school 
+  schools.each do |school, loc_hash|
+    unless locations.include? loc_hash[:location] do 
+      locations[loc_hash[:location]] << school 
+    else 
+      locations[loc_hash[:location]] = [school]
+    end 
+  end
+  locations
 end
