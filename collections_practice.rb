@@ -56,3 +56,6 @@ def find_cool(array)
     ele[:temperature] == "cool"
   end 
 end
+
+def organize_schools(array)
+end
