@@ -45,5 +45,6 @@ def merge_data(keys, data)
     x = data.find do |d|
       d.include? name
     end
-  x[:first_name] = k.  
+  x[name][:first_name] = name 
+  a
 end
