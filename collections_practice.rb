@@ -39,8 +39,11 @@ def count_elements(array)
 end 
 
 def merge_data(keys, data)
+  a = []
   keys.each do |k|
-    data.find do |d|
-      d.include? k.to_s
+    name = k[:first_name]
+    x = data.find do |d|
+      d.include? name
     end
+  x[:first_name] = k.  
 end
